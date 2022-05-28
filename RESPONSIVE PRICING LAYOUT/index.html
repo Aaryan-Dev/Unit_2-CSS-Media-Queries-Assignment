@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #heading {
+        text-align: center;
+        width: 35%;
+        margin: auto;
+      }
+      h2{
+        font-size:17px;
+        margin-top: 25px;
+      }
+      h2~h1{
+        font-size: 20px;
+      }
+      #heading p {
+        color: gray;
+      }
+
+      #cards-section{
+        margin:auto;
+        margin-top: 60px;
+        width:60%;
+        display: flex;
+      }
+      h2 + h1 + p {
+          font-style: italic;
+          font-size:10px;
+          color: gray;
+         margin-top: -10px;
+      }
+      #cards-section div{
+        text-align: center;
+        margin: 0px 12px 0px 12px;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+      div button{
+          border: 1px solid rgb(2, 2, 194);
+          padding: 10px 30px 10px 30px;
+          background-color: white;
+          color:rgb(2, 2, 194);
+          border-radius: 6px;
+          font-size:18px;
+          font-weight: 700;
+          margin-bottom: 25px;
+        margin-top: 28px;
+      }
+
+      @media all and (min-width:320px) and (max-width:767px) {
+          
+          #cards-section{
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+          }
+          #heading {
+        width: 90%;
+      }
+        }
+
+
+      @media all and (min-width:767px) and (max-width:1024px) {
+          
+          #cards-section{
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) ;
+            grid-template-rows: repeat(2, auto) ;
+            
+          }
+          #heading {
+        width: 65%;
+      }
+        }
+    </style>
+  </head>
+  <body>
+      <div id="heading">
+          <h1>Choose a plan that right for your business</h1>
+          <p>
+              We collect reviews from our users so you can get an honest opinion of
+              what an experience with our website are really like!
+            </p>
+        </div>
+        
+        <!-- Cards section -->
+        <div id="cards-section">
+            <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+      <div>
+        <h2>Starter Plan</h2>
+        <h1  style="color:green;" >Free</h1>
+        <p>Per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+
+      <div>
+        <h2>Starter Plan</h2>
+        <h1  style="color:orange;" >$39.00</h1>
+        <p>Per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+
+      <div>
+        <h2>Starter Plan</h2>
+        <h1 style="color:rgb(2, 2, 194);" >$59.00</h1>
+        <p>Per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>
