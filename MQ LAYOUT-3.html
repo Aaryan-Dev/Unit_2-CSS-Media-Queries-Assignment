@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ LAYOUT-3</title>
+
+<style>
+
+   #nav{
+       margin:auto;
+       width:93%;
+       background-color: yellow;
+       height: 50px;
+   }
+   #bod{
+       margin:auto;
+       width:93%;
+       margin-top: 20px;
+       height: 400px;
+       display: flex;
+       justify-content:space-between;
+   }
+
+   #bod>div:nth-child(1){
+       width:68%;
+       background-color: red;
+   }
+
+   #bod>div:nth-child(2){
+       width:28%;
+       display: flex;
+       flex-direction: column;
+       justify-content:space-between;
+   }
+  
+   #bod>div:nth-child(2)>div{
+       background-color:green;
+    height:30%;
+   }
+
+
+   @media all and (min-width:767px) and (max-width:1024px){
+    #bod{
+       margin:auto;
+       width:93%;
+       margin-top: 20px;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+       justify-content:space-between;
+   }
+    
+
+   #bod>div:nth-child(1){
+       width:100%;
+       background-color:red;
+       height:68%;
+    }
+    
+    #bod>div:nth-child(2){
+        width:100%;
+        height:28%;
+       display: flex;
+       flex-direction: row;
+       justify-content:space-between;
+   }
+   #bod>div:nth-child(2)>div{
+       width:30%;
+       background-color:green;
+    height:100%;
+   }
+   }
+
+
+   @media all and (min-width:320px) and (max-width:767px){
+
+    #bod{
+       margin:auto;
+       width:93%;
+       margin-top: 20px;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+       justify-content:space-between;
+   }
+    
+
+   #bod>div:nth-child(1){
+       width:100%;
+       background-color:red;
+       height:38%;
+    }
+    
+    #bod>div:nth-child(2){
+        width:100%;
+        height:58%;
+       display: flex;
+       flex-direction: column;
+       justify-content:space-between;
+   }
+   #bod>div:nth-child(2)>div{
+       width:100%;
+       background-color:green;
+    height:30%;
+   }
+   }
+   
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+   <div id="nav">
+       NAVIGATION
+   </div>
+
+
+   <div id="bod">
+    <div>LEFT BOX</div>
+
+   <div>
+       <div>RIGHT BOX 1</div>
+       <div>RIGHT BOX 2</div>
+       <div>RIGHT BOX 3</div>
+   </div>
+
+   </div>
+       
+
+    
+
+</body>
+</html>
